@@ -1,0 +1,10 @@
+<view class="one">
+  <navigator url="/subpkg/chat_detail/chat_detail">
+    <image src="https://meisheng-shop-img.oss-cn-beijing.aliyuncs.com/dialogue.png" mode="widthFix" />
+    <text>聊天</text>
+  </navigator>
+  <navigator url="/subpkg/psy_test/psy_test">
+    <image src="https://meisheng-shop-img.oss-cn-beijing.aliyuncs.com/answer.png" mode="widthFix" />
+    <text>答题</text>
+  </navigator>
+</view>

@@ -1,0 +1,12 @@
+<view class="button-container">  
+  <button bindtap="handleDetail" data-id="0">PSTR心理压力量表</button>  
+  <button bindtap="handleDetail" type="primary" data-id="1">儿童抑郁量表CDI</button>  
+</view>  
+<view class="button-container">  
+  <button bindtap="handleDetail" type="primary" data-id="2">中国中学生心理健康量表MSSMHS</button>  
+  <button bindtap="handleDetail" data-id="3">中学生情绪智力量表EIS</button>  
+</view>  
+<view class="button-container">  
+  <button bindtap="handleDetail" data-id="4">中学生人际关系综合诊断量表</button>  
+  <button bindtap="handleDetail" type="primary" data-id="5">中学生学习方面心理测试题</button>  
+</view>

@@ -1,0 +1,15 @@
+/* 对应的WXSS样式代码 */  
+.button-container {  
+  padding: 8rpx;
+  background-color: #efefef;
+  display: flex;  
+  flex-direction: row;  
+  justify-content: space-between; 
+  padding-bottom: 30rpx;  
+}  
+  
+button {  
+  flex: 1; 
+  padding: 20rpx;
+  height: 30vh; 
+}

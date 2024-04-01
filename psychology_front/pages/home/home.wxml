@@ -1,0 +1,44 @@
+<view class="global">
+  <!-- 轮播图 -->
+  <view class="home_swiper">
+    <swiper autoplay indicator-dots circular>
+      <swiper-item wx:for="{{swiperList}}" wx:for-item="item" wx:key="id">
+        <navigator url="/subpkg/article_detail/article_detail?id={{item.id}}&&title={{item.title}}">
+          <image mode="widthFix" src="{{item.avatar}}"></image>
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <!-- 选择 -->
+  <view class="home_choice">
+    <view class="home_choice_item {{choiceType?'active':''}}" bind:tap="handleChoiceArticle">
+      <image src="https://meisheng-shop-img.oss-cn-beijing.aliyuncs.com/%E4%B9%A6.png"  />
+      <text>文章</text>
+    </view>
+    <view class="home_choice_item {{!choiceType?'active':''}}" bind:tap="handleChoiceVideo">
+      <image src="https://meisheng-shop-img.oss-cn-beijing.aliyuncs.com/%E7%94%B5%E5%BD%B1.png" />
+      <text>视频</text>
+    </view>
+  </view>
+  <!-- 楼层 -->
+  <view class="home_floor_article" wx:if="{{choiceType}}">
+    <view wx:for="{{floorList}}" wx:for-item="item" wx:key="id">
+      <navigator url="/subpkg/article_detail/article_detail?id={{item.id}}&&title={{item.title}}">
+        <image mode="widthFix" src="{{item.avatar}}"></image>
+        <view class="right">
+          <text class="floor_title">{{item.title}}</text>
+          <text class="floor_desc">{{item.refer}}</text>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <view class="home_floor_video" wx:else>
+    <view wx:for="{{videoList}}" wx:for-item="item" wx:key="id">
+      <view class="floor_video">
+        <video  src="{{item.link}}" direction="90" show-mute-btn title="{{item.title}}" enable-play-gesture 	play-btn-position="center" 	show-snapshot-button bindplay="handleVideo" />
+        <text>{{item.title}}</text>
+      </view>
+    </view>
+  </view>
+</view>

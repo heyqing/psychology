@@ -1,0 +1,81 @@
+.search_bar {
+  height: 90rpx;
+  padding: 10rpx;
+  background-color: #158bb8;
+}
+.search_bar navigator {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15rpx;
+  color: #666;
+}
+.search_bar navigator icon {
+  padding-right: 5rpx;
+}
+
+.choice{
+  height: 26vh;
+  padding-top: 10rpx;
+  display: flex;  
+  flex-direction: row;  
+  justify-content: space-between; 
+  background-color: #ffffff;
+}
+.choice .choice_item{
+  width: 48%;
+  text-align: center;
+  margin: 8rpx;
+  border: 1px solid gray;
+  border-radius: 15%;
+}
+.choice  .active{
+  border: 1px solid red;
+  box-shadow: 5px 1px 1px palevioletred;
+}
+.choice .choice_item image{
+  height: 80%;
+  width: 96%;
+}
+.msg{
+  margin-top: 20rpx;
+  padding: 20rpx;
+}
+.msg .msg_item{
+  display: flex;
+  justify-content: left;
+  padding: 20rpx;
+  border-bottom: 5rpx solid #efefef;
+}
+.msg .msg_item image{
+  height: 45rpx;
+  width: 45rpx;
+}
+.msg .msg_item text{
+  padding-left: 15rpx;
+}
+.topic{
+  padding: 40rpx 30rpx 20rpx 30rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.topic .topic_item{
+  flex: 0 0 25%;
+  box-sizing: border-box;
+  padding: 20rpx;
+  margin-right: 10rpx;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.topic .topic_item text{
+  border: solid;
+  border-radius: 15rpx;
+}
+.topic_item text:last-child {  
+
+  margin-right: 0;  
+
+}

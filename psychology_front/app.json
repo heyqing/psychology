@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/chat/chat",
+    "pages/tree/tree",
+    "pages/user/user"
+  ],
+  "subPackages": [
+    {
+      "root": "subpkg",
+      "pages": [
+        "article_detail/article_detail",
+        "psy_test/psy_test",
+        "psy_test_detail/psy_test_detail",
+        "my_like/my_like",
+        "search/search",
+        "tree_msg/tree_msg",
+        "tree_topic/tree_topic",
+        "chat_detail/chat_detail"
+      ]
+    }
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#158bb8",
+    "navigationBarTitleText": "聆听心声",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#158bb8",
+    "backgroundColor": "#fafafa",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "icons/home.png",
+        "selectedIconPath": "icons/_home.png"
+      },
+      {
+        "pagePath": "pages/chat/chat",
+        "text": "咨询",
+        "iconPath": "icons/chat.png",
+        "selectedIconPath": "icons/_chat.png"
+      },
+      {
+        "pagePath": "pages/tree/tree",
+        "text": "树洞",
+        "iconPath": "icons/tree.png",
+        "selectedIconPath": "icons/_tree.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "icons/user.png",
+        "selectedIconPath": "icons/_user.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

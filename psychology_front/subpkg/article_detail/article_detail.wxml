@@ -1,0 +1,14 @@
+<view class="one">
+  <view class="title">{{articleTitle}}</view>
+  <view bind:tap="handleIcon" class="like">
+    <image src="{{like}}" mode="widthFix" />
+  </view>
+</view>
+<view class="tow">
+  <view class="content">
+    <rich-text nodes="{{articleEntity.bodyHtml}}"></rich-text>
+  </view>
+  <view class="end">
+    <text>没有更多了</text>
+  </view>
+</view>

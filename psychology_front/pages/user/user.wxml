@@ -1,0 +1,64 @@
+<view class="user_info">
+  <!-- 用户背景信息开始 -->
+  <view class="user_info_bg">
+    <view class="user_info_warp">
+      <image class="user_icon" src="{{userInfo.avatarUrl}}"></image>
+      <view class="user_name">{{userInfo.nickName}}</view>
+    </view>
+  </view>
+  <!-- 用户背景信息结束 -->
+
+<view class="back-img">
+  <!-- 应用相关信息开始 -->
+  <view class="app_info_warp">
+    <navigator bind:tap="handleHome" url="/pages/home/home">
+      <view class="app_info_item ">
+        <image src="../../icons/homepage.png" />
+        <text>主页</text>
+      </view>
+    </navigator>
+    <navigator url="/subpkg/my_like/my_like">
+      <view class="app_info_item">
+        <image src="../../icons/collect.png" />
+        <text>我的喜欢</text>
+      </view>
+    </navigator>
+    <view class="app_info_item" bind:tap="handleButton">
+      <image src="../../icons/topic.png" />
+      <text>话题</text>
+    </view>
+    <view class="app_info_item" bind:tap="handleButton">
+      <image src="../../icons/forum.png" />
+      <text>论坛帖子</text>
+    </view>
+    <view class="app_info_item" bind:tap="handleButton">
+      <image src="../../icons/group.png" />
+      <text>圈子内容</text>
+    </view>
+    <view class="app_info_item" bind:tap="handleButton">
+      <image src="../../icons/task.png" />
+      <text>任务</text>
+    </view>
+    <view class="app_info_item" bind:tap="handleButton">
+      <image src="../../icons/reward.png" />
+      <text>邀请有奖</text>
+    </view>
+    <view class="app_info_item" bind:tap="handleButton">
+      <image src="../../icons/draft.png" />
+      <text>草稿箱</text>
+    </view>
+    <view class="app_info_item" bindtap="handleEditAddress">
+      <image src="../../icons/address.png" />
+      <text>我的地址</text>
+    </view>
+    <view class="app_info_item" bind:tap="handleButton">
+      <image src="../../icons/setting.png" />
+      <text>设置</text>
+    </view>
+    <view class="app_info_item">
+      <button open-type="feedback" class="feedback">意见反馈</button>
+    </view>
+  </view>
+  <!-- 应用相关信息开始 -->
+</view>
+</view>

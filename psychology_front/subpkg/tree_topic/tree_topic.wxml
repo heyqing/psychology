@@ -1,0 +1,10 @@
+<view class="main">
+  <text class="title">{{title}}</text>
+  <text class="content">{{topicEntity.content}} </text>
+  <view class="region">
+    <text class="tip">来自：</text>
+    <image src="{{userInfo.avatarUrl}}" />
+    <text class="name">{{userInfo.nickname}}</text>
+  </view>
+
+</view>

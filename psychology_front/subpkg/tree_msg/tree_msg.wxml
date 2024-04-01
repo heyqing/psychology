@@ -1,0 +1,21 @@
+<!-- 写 -->
+<view wx:if="{{wFlag}}" class="write">
+  <textarea auto-focus value="{{writeValue}}" placeholder="请输入您的留言" bindinput="bindinput" />
+  <button type="primary" bind:tap="handleWSend">发送</button>
+</view>
+
+<!-- 看 -->
+<view wx:if="{{sFlag}}" class="show">
+  <image wx:if="{{msgList ===  null}}" src="https://cvarst.oss-cn-beijing.aliyuncs.com/%E6%9A%82%E6%97%A0.png" mode="widthFix" />
+  <view wx:if="{{msgList !==  null}}" wx:for="{{msgList}}" wx:key="id" wx:for-item="item" class="show_area">
+    <text>{{item.msg}}</text>
+  </view>
+</view>
+
+<!-- 回复 -->
+<view wx:if="{{rFlag}}" class="reply">
+  <image wx:if="{{replyList ===  null}}" src="https://cvarst.oss-cn-beijing.aliyuncs.com/%E6%9A%82%E6%97%A0.png" mode="widthFix" />
+  <view wx:if="{{replyList !==  null}}" class="reply_area" wx:for="{{replyList}}" wx:for-item="item" wx:key="id">
+    <text>{{item.reply}}</text>
+  </view>
+</view>

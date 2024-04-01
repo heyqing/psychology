@@ -1,0 +1,41 @@
+.write{
+  padding: 20rpx;
+}
+.write textarea{
+  padding: 10rpx;
+  border: solid;
+  width: 96%;
+  border-radius: 15rpx;
+}
+.write button{
+  margin-top: 15rpx;
+}
+.show{
+  padding: 20rpx;
+  text-align: center;
+  height: 100vh;
+}
+.show .show_area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  border-radius: 20rpx;
+  padding: 10rpx;
+  background-color: #efefef;
+}
+.reply{
+  height: 100vh;
+  
+}
+image{
+  margin-top: 20vh;
+}
+.reply .reply_area{
+  margin-top: 20rpx;
+  width: 94%;
+  padding: 20rpx;
+  text-align: center;
+  background-color: #efefef;
+  border-radius: 15rpx;
+}

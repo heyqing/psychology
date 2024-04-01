@@ -1,0 +1,33 @@
+<view wx:if="{{answer}}">
+  <view class="one" wx:if="{{isTopic}}">
+    <text class="title">{{title}}</text>
+    <view class="desc">
+      <text>{{desc}}</text>
+    </view>
+    <button type="primary" bind:tap="handleStart">开始答题</button>
+  </view>
+  <view class="two" wx:else>
+    <view class="card">
+      <view class="question"><text>{{index+1}}、</text>{{topicList[index]}}</view>
+      <radio-group bindchange="radioChange">
+        <label wx:for="{{optionList[index]}}" wx:key="index" wx:for-item="item">
+          <radio value="{{item.score}}" checked="{{check}}" /> <text>{{item.option}}</text>
+        </label>
+      </radio-group>
+      <button type="primary" bind:tap="handleTip">{{tip}}</button>
+    </view>
+  </view>
+</view>
+<view wx:else>
+  <view class="a-o">
+    <text class="o-c">您的得分是</text>
+    <text class="o-n">{{total}}</text>
+    <text class="o-c">分^_^</text>
+  </view>
+  <view class="answer">
+    <text>{{answerMap.answer}}</text>
+  </view>
+  <view class="suggest">
+    <text>{{answerMap.suggest}}</text>
+  </view>
+</view>

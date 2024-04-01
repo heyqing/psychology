@@ -1,0 +1,81 @@
+.one{
+  background-color: #ffffff;
+  background-image: url(https://meisheng-shop-img.oss-cn-beijing.aliyuncs.com/relax.jpg);
+  background-size: contain; 
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  height: 100vh;
+}
+.title{
+  color: #158bb8;
+  font-weight: bolder;
+  font-size: 60rpx;
+  display: grid;
+  text-align: center;
+  padding: 20rpx 20rpx 380rpx 20rpx; 
+}
+.desc{
+  font-weight: 600;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 25rpx;
+  margin: 20rpx;
+  text-align: justify;
+  background-color: #ffffff;
+  border-radius: 15rpx;
+  box-shadow: 10px 5px 5px gray;
+}.one button{
+  margin-top: 20rpx;
+}
+
+.two{
+  background-color: #efefef;
+  height: 100vh;
+  position: relative;
+}
+.card{
+  position: absolute;  
+  top: 30%;  
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  background-color: #ffffff;
+  width: 88%;
+  padding: 20rpx;
+  border-radius: 15rpx;
+}
+.question {  
+  margin-bottom: 20rpx;  
+  font-weight: bold;  
+}  
+label{
+  display: block;
+}
+radio {  
+  padding: 10rpx;
+}
+
+.a-o{
+  text-align: center;
+  padding: 30rpx;
+}
+.o-c{
+  font-size: 26rpx;
+  font-style: oblique;
+}
+.o-n{
+  font-size: 100rpx;
+  padding: 8rpx;
+  color: #2bc444;
+}
+.answer{
+  padding: 30rpx;
+  background-color: #efefef;
+  margin: 20rpx;
+  border-radius: 15px;
+}
+.suggest{
+  padding: 30rpx;
+  background-color: #efefef;
+  margin: 20rpx;
+  border-radius: 15px;
+  color: #cf9019;
+}

@@ -1,0 +1,29 @@
+.one{
+  padding: 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.one .title{
+  font-weight: bolder;
+  font-size: larger;
+  padding: 5rpx;
+}
+.one .like{
+  background-color: #fefefe;
+}
+.one .like image{
+  width: 80rpx;
+}
+.tow{
+  background-color: #efefef;
+  height: 100vh;
+}
+.tow .content{
+  padding: 20rpx;
+}
+.tow .end{
+  color: gray;
+  text-align: center;
+  font-size: smaller;
+  padding: 20rpx;
+}

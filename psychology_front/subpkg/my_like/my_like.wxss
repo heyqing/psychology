@@ -1,0 +1,31 @@
+.home_floor_article{
+  padding: 30rpx;
+  background-color: #efefef;
+  height: 100vh;
+}
+.home_floor_article navigator{
+  display:flex;
+  margin-bottom: 10rpx;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+.home_floor_article image{
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  width: 50%;
+}
+
+.home_floor_article .right .floor_title{
+  margin-top: 25%;
+  display: block;
+  font-size: 38rpx;
+  font-weight: bolder;
+  text-overflow: ellipsis;
+}
+
+.home_floor_article .right .floor_desc{
+  padding-top: 12rpx;
+  display: block;
+  font-size: 30rpx;
+  text-overflow: ellipsis;
+}

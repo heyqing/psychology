@@ -1,0 +1,6 @@
+{
+  "usingComponents": {},
+  "window": {
+    "onReachBottomDistance": 50
+  }
+}

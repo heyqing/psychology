@@ -1,0 +1,20 @@
+<view class="chat">
+  <view class="dialogue">
+    <view class="{{item.id === 0 ? 'right':'left'}}" wx:for="{{content}}" wx:key="id" wx:for-item="item">
+      <!-- 如果 item.id 等于 0，先渲染 image，再渲染 text -->
+      <block wx:if="{{item.id === 0}}">
+        <text class="dia_text me">{{item.text}}</text>
+        <image class="user_icon" src="{{mineAvatar}}" />
+      </block>
+      <!-- 如果 item.id 不等于 0，先渲染 text，再渲染 image -->
+      <block wx:else>
+        <image class="user_icon" src="{{himAvatar}}" />
+        <text class="dia_text him">{{item.text}}</text>
+      </block>
+    </view>
+  </view>
+  <view class="send">
+    <input value="{{inputValue}}" class="input" type="text" bindinput="handleInput" />
+    <button type="primary" size="mini" bind:tap="handleSendMsg">发送</button>
+  </view>
+</view>

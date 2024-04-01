@@ -1,0 +1,36 @@
+<view class="search_bar">
+  <navigator url="/subpkg/search/search" open-type="navigate">
+    <icon type="search" size="16"></icon>搜索
+  </navigator>
+</view>
+<view class="choice">
+  <view class="choice_item {{isType === 'msg' ? 'active':''}}" bind:tap="handleMsg">
+    <image src="https://meisheng-shop-img.oss-cn-beijing.aliyuncs.com/%E7%95%99%E8%A8%80%E7%BA%B8.png" />
+    <text>留言箱</text>
+  </view>
+  <view class="choice_item {{isType === 'topic' ? 'active':''}}" bind:tap="handleTopic">
+    <image src="https://meisheng-shop-img.oss-cn-beijing.aliyuncs.com/%E8%AF%9D%E9%A2%98.png" />
+    <text>精选话题</text>
+  </view>
+</view>
+
+<view class="msg" wx:if="{{isType === 'msg'}}">
+  <view class="msg_item" bind:tap="handleMsgItem" data-type="0">
+    <image src="https://meisheng-shop-img.oss-cn-beijing.aliyuncs.com/%E5%86%99%E4%BD%9C%E4%B8%9A.png" />
+    <text>我要留言</text>
+  </view>
+  <view class="msg_item" bind:tap="handleMsgItem" data-type="1">
+    <image src="https://meisheng-shop-img.oss-cn-beijing.aliyuncs.com/%E6%9F%A5%E7%9C%8B.png" />
+    <text>我的留言</text>
+  </view>
+  <view class="msg_item" bind:tap="handleMsgItem" data-type="2">
+    <image src="https://meisheng-shop-img.oss-cn-beijing.aliyuncs.com/%E7%BA%B8%E9%A3%9E%E6%9C%BA.png" />
+    <text>我的回复</text>
+  </view>
+</view>
+
+<view class="topic" wx:if="{{isType === 'topic'}}">
+  <view class="topic_item" wx:for="{{topicList}}" wx:key="id" wx:for-item="item">
+    <text bind:tap="handleTopicItem" data-mid="{{item.mid}}" data-title="{{item.content}}">#{{item.content}}</text>
+  </view>
+</view>

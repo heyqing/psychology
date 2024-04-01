@@ -1,0 +1,85 @@
+{
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "projectname": "psychology",
+  "setting": {
+    "compileHotReLoad": true,
+    "urlCheck": false
+  },
+  "libVersion": "2.19.6",
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "我要留言",
+          "pathName": "subpkg/tree_msg/tree_msg",
+          "query": "type=我要留言",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "话题详情",
+          "pathName": "subpkg/tree_topic/tree_topic",
+          "query": "id=3&title=话题3",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "树洞",
+          "pathName": "pages/tree/tree",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "我的喜欢",
+          "pathName": "subpkg/my_like/my_like",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "文章 详情",
+          "pathName": "subpkg/article_detail/article_detail",
+          "query": "id=1",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "测试",
+          "pathName": "subpkg/psy_test/psy_test",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "测试详情",
+          "pathName": "subpkg/psy_test_detail/psy_test_detail",
+          "query": "id=0",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "聊天",
+          "pathName": "pages/chat/chat",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "首页",
+          "pathName": "pages/home/home",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "个人中心",
+          "pathName": "pages/user/user",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

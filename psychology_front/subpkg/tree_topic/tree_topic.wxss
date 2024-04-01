@@ -1,0 +1,37 @@
+.main{
+  height: 100vh;
+  padding: 20rpx;
+}
+
+.main .title{
+  padding: 14rpx;
+  font-size: 60rpx;
+  text-align: center;
+  display: block;
+}
+
+.main .content{
+  flex-wrap: wrap;
+  padding: 40rpx 5rpx 30rpx 5rpx;
+}
+
+.main .region{
+  border-radius: 15rpx;
+  border: solid;
+  margin-top: 30rpx;
+  display: flex;
+  padding-left: 30%;
+}
+.main .region .tip{
+  padding: 8rpx;
+  font-style: oblique;
+  font-size: 28rpx;
+}
+.main .region image{
+  height: 54rpx;
+  width: 54rpx;
+  border-radius: 50% 50%;
+}
+.main .region .name{
+  padding: 4rpx 0rpx 4rpx 14rpx;
+}
